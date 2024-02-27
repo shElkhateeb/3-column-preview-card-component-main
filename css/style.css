@@ -11,7 +11,29 @@
 }
 
 body {
-    
+    background-color: var(--color-bg-h);
+}
+
+h1,
+h2 {
+  color: var(--color-bg-h);
+}
+
+p {
+  color: var(--color-p);
+}
+
+button {
+  background-color: var(--color-bg-h);
+}
+section:first-child button {
+  color: var(--color1);
+}
+section:nth-child(2) button {
+  color: var(--color2);
+}
+section:last-child button {
+  color: var(--color3);
 }
 
 section:first-child {
