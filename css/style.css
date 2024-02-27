@@ -46,6 +46,15 @@ section:last-child {
     background-color: var(--color3);
 }
 
+/* start flex */
+main {
+  display: flex;
+  flex-flow: row wrap;
+}
+section {
+  width: 300px;
+}
+/* end flex */
 
 .attribution {
   font-size: 11px;
