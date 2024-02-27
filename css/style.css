@@ -8,23 +8,33 @@
   --color3: hsl(179, 100%, 13%);
   --color-p: hsla(0, 0%, 100%, 0.75);
   --color-bg-h: hsl(0, 0%, 95%);
+  --width-col: 300px;
+  --height-col: 500px;
+  --padding-col: 45px;
 }
 
 body {
     background-color: var(--color-bg-h);
+    font-size: calc(1rem * 15 / 16);
 }
 
 h1,
 h2 {
   color: var(--color-bg-h);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 3em;
 }
 
 p {
   color: var(--color-p);
+  font-family: "Lexend Deca", sans-serif;
 }
 
 button {
   background-color: var(--color-bg-h);
+  position: absolute;
+  left: var(--padding-col);
+  bottom: var(--padding-col);
 }
 section:first-child button {
   color: var(--color1);
@@ -50,9 +60,18 @@ section:last-child {
 main {
   display: flex;
   flex-flow: row wrap;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
 }
 section {
-  width: 300px;
+  width: var(--width-col);
+  height: var(--height-col);
+  padding: var(--padding-col);
+  position: relative;
 }
 /* end flex */
 
