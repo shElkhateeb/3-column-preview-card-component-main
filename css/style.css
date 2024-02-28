@@ -41,8 +41,8 @@ button {
   font: 16px "Lexend Deca", sans-serif;
   width: 50%;
   height: calc(var(--width-col) / 6);
-  cursor: pointer;
   border: none;
+  cursor: pointer;
   position: absolute;
   left: var(--padding-col);
   bottom: var(--padding-col);
@@ -61,6 +61,22 @@ section:nth-child(2) button {
 section:last-child button {
   color: var(--color3);
 }
+
+/* start active state */
+section button:hover {
+  color: var(--color-bg-h);
+  border: 2px solid var(--color-bg-h);
+}
+section:first-child button:hover {
+  background-color: var(--color1);
+}
+section:nth-child(2) button:hover {
+  background-color: var(--color2);
+}
+section:last-child button:hover {
+  background-color: var(--color3);
+}
+/* end active state */
 
 section:first-child {
   background-color: var(--color1);
