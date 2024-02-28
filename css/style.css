@@ -14,8 +14,9 @@
 }
 
 body {
-    background-color: var(--color-bg-h);
-    font-size: calc(1rem * 15 / 16);
+  background-color: var(--color-bg-h);
+  font-size: calc(1rem * 15 / 16);
+  font-family: "Lexend Deca", sans-serif;
 }
 
 h1,
@@ -27,14 +28,23 @@ h2 {
 
 p {
   color: var(--color-p);
-  font-family: "Lexend Deca", sans-serif;
 }
 
 button {
   background-color: var(--color-bg-h);
+  font: 16px "Lexend Deca", sans-serif;
+  width: 50%;
+  height: calc(var(--width-col) / 6);
+  cursor: pointer;
+  border: none;
   position: absolute;
   left: var(--padding-col);
   bottom: var(--padding-col);
+  border-radius: calc(var(--width-col) / 6);
+  -webkit-border-radius: calc(var(--width-col) / 6);
+  -moz-border-radius: calc(var(--width-col) / 6);
+  -ms-border-radius: calc(var(--width-col) / 6);
+  -o-border-radius: calc(var(--width-col) / 6);
 }
 section:first-child button {
   color: var(--color1);
@@ -47,13 +57,13 @@ section:last-child button {
 }
 
 section:first-child {
-    background-color: var(--color1);
+  background-color: var(--color1);
 }
 section:nth-child(2) {
-    background-color: var(--color2);
+  background-color: var(--color2);
 }
 section:last-child {
-    background-color: var(--color3);
+  background-color: var(--color3);
 }
 
 /* start flex */
